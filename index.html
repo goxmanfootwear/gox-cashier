@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>جوكس كاشير</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100svh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background: #101010;
+    color: #f8f8f8;
+    font-family: system-ui, sans-serif;
+  }
+  main { width: min(100%, 680px); }
+  h1 { margin: 0 0 24px; font-size: clamp(2rem, 7vw, 3.5rem); }
+  nav { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 245px), 1fr)); gap: 14px; }
+  a {
+    display: grid;
+    align-content: center;
+    min-height: 112px;
+    padding: 20px;
+    border: 1px solid #595959;
+    border-radius: 12px;
+    background: #222;
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  a:hover { border-color: #fff; }
+  a:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+  .festival { background: #e7b84c; border-color: #e7b84c; color: #17120a; }
+  small { margin-top: 6px; font-size: .9rem; font-weight: 400; }
+</style>
+</head>
+<body>
+<main>
+  <h1>جوكس كاشير</h1>
+  <nav aria-label="اختيار الكاشير">
+    <a href="https://gox-man-loyalty.onrender.com/cashier">الكاشير العادي<small>الفواتير والنقاط والزيارات</small></a>
+    <a class="festival" href="https://goxman-offers-festival.onrender.com/cashier">المهرجان<small>الأونلاين والفرع وقسائم العروض</small></a>
+  </nav>
+</main>
+</body>
+</html>
